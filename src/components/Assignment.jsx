@@ -18,6 +18,7 @@ function Assignment() {
     };
 
     const filteredData = userData.filter((user) => {
+        const searchTerm = searchInput.toLowerCase();
         return (
             user.firstName.includes(searchTerm) ||
             user.lastName.includes(searchTerm) ||
@@ -81,7 +82,7 @@ function Assignment() {
                     {filteredData.length === 0 && searchInput ? (
                         <p className="text-center text-gray-500">No users found</p>
                     ) : (
-                        userData.map((user, index) => (
+                        filteredData.map((user, index) => (
                             <div className='flex border-t border-black' key={index}>
                                 <p className='pl-2 w-4/12 overflow-x-auto'>{user.firstName}</p>
                                 <p className='pl-2 border-l border-r border-black w-4/12 overflow-x-auto'>{user.lastName}</p>
