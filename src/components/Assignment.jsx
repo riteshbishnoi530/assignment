@@ -88,7 +88,6 @@ function Assignment() {
                     <p className="pl-2 py-2 w-4/12 font-semibold">First Name</p>
                     <p className="pl-2 py-2 w-4/12 font-semibold border-l border-r border-black">Last Name</p>
                     <p className="pl-2 py-2 w-4/12 font-semibold">Email</p>
-                    <p className="pl-2 py-2 w-4/12 font-semibold">Actions</p>
                 </div>
 
                 <div className="flex flex-col">
